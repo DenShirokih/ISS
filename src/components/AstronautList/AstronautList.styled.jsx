@@ -20,7 +20,13 @@ export const Icons = styled(Icon)`
   width: 30px;
   margin-right: 15px;
 `;
-export const TimeNow = styled.div``;
+export const TimeNow = styled.div`
+  border: solid;
+`;
+export const TimeData = styled.p`
+  padding-bottom: 5px;
+  margin: 0px;
+`;
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;

@@ -4,6 +4,7 @@ import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
 import { getLocation } from 'api/apiService';
 import { InfinitySpin } from 'react-loader-spinner';
 import useInterval from 'hooks/useInterval';
+import { useEffect } from 'react';
 
 const containerStyle = {
   width: '500px',
@@ -18,6 +19,10 @@ const options = {
 
 export const Map = () => {
   const [location, setLocation] = useState('');
+  useEffect(() => {
+    getLocation().then(resp => setLocation(resp.iss_position));
+  }, []);
+
   useInterval(() => {
     getLocation().then(resp => setLocation(resp.iss_position));
   }, 5000);
@@ -25,12 +30,11 @@ export const Map = () => {
     id: 'google-map-script',
     googleMapsApiKey: process.env.REACT_APP_KEY,
   });
-
   const lat = +location.latitude;
   const lng = +location.longitude;
   const center = {
-    lat: lat || 0,
-    lng: lng || 0,
+    lat: lat || NaN,
+    lng: lng || NaN,
   };
 
   return isLoaded ? (

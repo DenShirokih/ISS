@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Wrapper = styled.div`
-  border: solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,4 +9,11 @@ export const Wrapper = styled.div`
 export const WrapperMap = styled.div`
   justify-content: center;
   align-items: center;
+`;
+
+export const Container = styled.div`
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border: solid;
 `;
