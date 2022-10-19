@@ -5,8 +5,6 @@ import { getLocation } from 'api/apiService';
 import { InfinitySpin } from 'react-loader-spinner';
 import useInterval from 'hooks/useInterval';
 
-const API_KEY = 'AIzaSyDLsJ47Dod306bdMEr-YLdfAajHLcN1qDA';
-
 const containerStyle = {
   width: '500px',
   height: '500px',
@@ -25,7 +23,7 @@ export const Map = () => {
   }, 5000);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: API_KEY,
+    googleMapsApiKey: process.env.REACT_APP_KEY,
   });
 
   const lat = +location.latitude;
