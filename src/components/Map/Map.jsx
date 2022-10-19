@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import dayjs from 'dayjs';
 import { Info } from './Map.styled';
 import { GoogleMap, MarkerF, useJsApiLoader } from '@react-google-maps/api';
 import { getLocation } from 'api/apiService';
@@ -12,7 +11,7 @@ const containerStyle = {
   width: '500px',
   height: '500px',
 };
-console.log();
+
 const options = {
   mapTypeControl: false,
   streetViewControl: false,
