@@ -46,9 +46,8 @@ export const AstronautList = () => {
               );
             })}
       </AstronautUl>
-      <div>
-        <p> Total amount: {astronaut.length} people on ISS</p>
-      </div>
+
+      <p> Total amount: {astronaut.length} people on ISS</p>
     </Wrapper>
   );
 };

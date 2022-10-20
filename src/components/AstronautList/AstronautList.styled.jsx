@@ -15,6 +15,8 @@ export const Austronaut = styled.li`
 export const AstronautUl = styled.ul`
   display: flex;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 `;
 export const Icons = styled(Icon)`
   width: 30px;
@@ -22,6 +24,7 @@ export const Icons = styled(Icon)`
 `;
 export const TimeNow = styled.div`
   border: solid;
+  margin-bottom: 15px;
 `;
 export const TimeData = styled.p`
   padding-bottom: 5px;
@@ -30,5 +33,5 @@ export const TimeData = styled.p`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 `;

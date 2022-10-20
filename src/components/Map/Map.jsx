@@ -33,8 +33,8 @@ export const Map = () => {
   const lat = +location.latitude;
   const lng = +location.longitude;
   const center = {
-    lat: lat || NaN,
-    lng: lng || NaN,
+    lat: lat || 0,
+    lng: lng || 0,
   };
 
   return isLoaded ? (

@@ -9,11 +9,11 @@ export const Wrapper = styled.div`
 export const WrapperMap = styled.div`
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
 `;
 
 export const Container = styled.div`
   padding: 10px;
   display: flex;
-  align-items: center;
   border: solid;
 `;
