@@ -15,6 +15,9 @@ import shortid from 'shortid';
 export const AstronautList = () => {
   const [astronaut, setAstronaut] = useState('');
   const [time, setTime] = useState('');
+  useEffect(() => {
+    getLocation().then(resp => setTime(resp.timestamp));
+  }, []);
   useInterval(() => {
     getLocation().then(resp => setTime(resp.timestamp));
   }, 5000);
