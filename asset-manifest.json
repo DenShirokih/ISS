@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ISS/static/css/main.14b361c4.css",
+    "main.js": "/ISS/static/js/main.62e66ce1.js",
+    "static/media/icon.svg": "/ISS/static/media/icon.4cadd0ad6c846a215738bb43fb846caf.svg",
+    "index.html": "/ISS/index.html",
+    "main.14b361c4.css.map": "/ISS/static/css/main.14b361c4.css.map",
+    "main.62e66ce1.js.map": "/ISS/static/js/main.62e66ce1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14b361c4.css",
+    "static/js/main.62e66ce1.js"
+  ]
+}
